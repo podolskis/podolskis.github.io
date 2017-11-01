@@ -143,3 +143,8 @@ hr {
 	text-shadow: none;
 }
 
+@media screen and (max-width: 767px) {
+  .profile {
+    left: 50%;
+  }
+}
