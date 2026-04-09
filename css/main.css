@@ -224,8 +224,16 @@ body::before {
 
 /* Responsive */
 @media (max-width: 520px) {
+    body {
+        overflow: auto;
+        align-items: flex-start;
+    }
+
     .container {
         padding: 16px;
+        /* Push card below the face area so the portrait is visible above it */
+        padding-top: max(42vh, 220px);
+        padding-bottom: 24px;
     }
 
     .card {
